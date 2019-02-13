@@ -41,3 +41,13 @@ It is always nice to have a GUI tool for managing databases. For Mac, you can us
 You may install Sequel Pro using [homebrew](http://sourabhbajaj.com/mac-setup/Homebrew/Cask.html):
 
     brew cask install sequel-pro
+
+### GUI Tool - Usage
+
+Before connecting Sequel Pro to mysql
+
+Find the file my.cnf
+
+    mdfind -name my.cnf
+
+Under `[mysqld]` add `default-authentication-plugin=mysql_native_password`
